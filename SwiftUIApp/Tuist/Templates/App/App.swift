@@ -7,12 +7,12 @@
 
 import ProjectDescription
 
-let nameAttribute: Template.Attribute = .required("name")
+//let nameAttribute: Template.Attribute = .required("name")
 
-let template = Template(
+let appTemplate = Template(
     description: "Creates an App module",
     attributes: [
-        nameAttribute
+        .required("name")
     ],
     items: [
         .file(

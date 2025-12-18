@@ -1,32 +1,27 @@
 import ProjectDescription
 
 let project = Project(
-    name: "Auth",
+    name: "UI",
     targets: [
 
         // MARK: - Feature Framework
         .target(
-            name: "Auth",
+            name: "UI",
             destinations: .iOS,
             product: .framework,
-            bundleId: "com.example.auth",
+            bundleId: "com.example.ui",
             deploymentTargets: .iOS("17.0"),
             sources: ["Sources/**"],
             resources: ["Resources/**"],
-            dependencies: [
-                .project(
-                    target: "UI",
-                    path: "../UI"
-                )
-            ]
+            dependencies: []
         ),
 
         // MARK: - Example App
 //        .target(
-//            name: "AuthExample",
+//            name: "UiExample",
 //            destinations: .iOS,
 //            product: .app,
-//            bundleId: "com.example.auth.example",
+//            bundleId: "com.example.ui.example",
 //            deploymentTargets: .iOS("17.0"),
 //            infoPlist: .extendingDefault(with: [
 //                "UILaunchScreen": [:]
@@ -34,7 +29,7 @@ let project = Project(
 //            sources: ["Example/Sources/**"],
 //            resources: ["Example/Resources/**"],
 //            dependencies: [
-//                .target(name: "Auth")
+//                .target(name: "Ui")
 //            ]
 //        )
     ]

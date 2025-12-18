@@ -14,6 +14,7 @@
 		5CC4FB34994C6DC7BA05BBB1 /* Util.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3971CE0F850EA4A76F58D45 /* Util.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99168CE9768DCC6C54227277 /* Auth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 709ECB981BF7FB2A9D697179 /* Auth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AAB073F1221B89F1B9D0816C /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 514C6A786251DDEC6B3DFF77 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE09BF63329CBFB7E6AE7ACA /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 428F9609FBA1B1961E201D6F /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFFC8907652BA8FFE8A9AA9A /* Util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3971CE0F850EA4A76F58D45 /* Util.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 			files = (
 				99168CE9768DCC6C54227277 /* Auth.framework in Embed Frameworks */,
 				AAB073F1221B89F1B9D0816C /* Core.framework in Embed Frameworks */,
+				CE09BF63329CBFB7E6AE7ACA /* UI.framework in Embed Frameworks */,
 				5CC4FB34994C6DC7BA05BBB1 /* Util.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -36,6 +38,7 @@
 /* Begin PBXFileReference section */
 		01E1AA015F9EE84780DE15E5 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Info.plist"; sourceTree = "<group>"; };
 		23A9524651AD399813EE137A /* AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApp.swift; sourceTree = "<group>"; };
+		428F9609FBA1B1961E201D6F /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		514C6A786251DDEC6B3DFF77 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		571E08A9083FD4334E4B7D06 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E38436ED8889DC7424B93FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 				571E08A9083FD4334E4B7D06 /* App.app */,
 				709ECB981BF7FB2A9D697179 /* Auth.framework */,
 				514C6A786251DDEC6B3DFF77 /* Core.framework */,
+				428F9609FBA1B1961E201D6F /* UI.framework */,
 				D3971CE0F850EA4A76F58D45 /* Util.framework */,
 			);
 			name = Products;

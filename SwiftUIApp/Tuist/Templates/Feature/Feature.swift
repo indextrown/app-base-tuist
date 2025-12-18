@@ -1,11 +1,16 @@
+//
+//  Feature.swift
+//  LoginManifests
+//
+//  Created by 김동현 on 12/19/25.
+//
+
 import ProjectDescription
 
-let nameAttribute: Template.Attribute = .required("name")
-
-let template = Template(
+let featureTemplate = Template(
     description: "Creates a new feature module",
     attributes: [
-        nameAttribute
+        .required("name")
     ],
     items: [
         .file(

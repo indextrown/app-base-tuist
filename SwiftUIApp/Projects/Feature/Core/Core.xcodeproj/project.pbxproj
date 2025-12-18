@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297A94A380150A90A855B4F9 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB06DA4B394E9423CDE3E32C /* UI.framework */; };
 		56D9E9BB81B27479BAC30E27 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F25FE2D4A82B35B0C83AE /* Core.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		065F25FE2D4A82B35B0C83AE /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		26BDD2D3E7FED8CDE9A52F46 /* Core-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Info.plist"; sourceTree = "<group>"; };
 		2B0FA7F85F3573FB522F9478 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB06DA4B394E9423CDE3E32C /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297A94A380150A90A855B4F9 /* UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0FA7F85F3573FB522F9478 /* Core.framework */,
+				AB06DA4B394E9423CDE3E32C /* UI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";

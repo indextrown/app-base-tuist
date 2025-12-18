@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21D2EA2087B673E705A9B0E8 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412CC4EA98D06973EF59123 /* Auth.swift */; };
+		F6834D8C7B63B6E8FA0B5CBE /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C96F857E35913DC69F9D8C /* UI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		8895FC8BB8C3644A2923E77A /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C96F857E35913DC69F9D8C /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C857B2C600CA35873D2A9D32 /* Auth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Auth-Info.plist"; sourceTree = "<group>"; };
 		F412CC4EA98D06973EF59123 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6834D8C7B63B6E8FA0B5CBE /* UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				8895FC8BB8C3644A2923E77A /* Auth.framework */,
+				A5C96F857E35913DC69F9D8C /* UI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
