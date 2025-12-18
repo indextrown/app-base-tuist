@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0124B5187DA64DDD60250AD7 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C6A786251DDEC6B3DFF77 /* Core.framework */; };
 		30A760CEBD549F168553106C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E38436ED8889DC7424B93FD /* ContentView.swift */; };
 		326C0B3CADC173970CDF3EAF /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709ECB981BF7FB2A9D697179 /* Auth.framework */; };
 		370F7361A785195CF31EF70D /* AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9524651AD399813EE137A /* AppApp.swift */; };
+		5CC4FB34994C6DC7BA05BBB1 /* Util.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3971CE0F850EA4A76F58D45 /* Util.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99168CE9768DCC6C54227277 /* Auth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 709ECB981BF7FB2A9D697179 /* Auth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AAB073F1221B89F1B9D0816C /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 514C6A786251DDEC6B3DFF77 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFFC8907652BA8FFE8A9AA9A /* Util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3971CE0F850EA4A76F58D45 /* Util.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,6 +25,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				99168CE9768DCC6C54227277 /* Auth.framework in Embed Frameworks */,
+				AAB073F1221B89F1B9D0816C /* Core.framework in Embed Frameworks */,
+				5CC4FB34994C6DC7BA05BBB1 /* Util.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,9 +36,11 @@
 /* Begin PBXFileReference section */
 		01E1AA015F9EE84780DE15E5 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Info.plist"; sourceTree = "<group>"; };
 		23A9524651AD399813EE137A /* AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApp.swift; sourceTree = "<group>"; };
+		514C6A786251DDEC6B3DFF77 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		571E08A9083FD4334E4B7D06 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E38436ED8889DC7424B93FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		709ECB981BF7FB2A9D697179 /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3971CE0F850EA4A76F58D45 /* Util.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Util.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				326C0B3CADC173970CDF3EAF /* Auth.framework in Frameworks */,
+				0124B5187DA64DDD60250AD7 /* Core.framework in Frameworks */,
+				FFFC8907652BA8FFE8A9AA9A /* Util.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,8 @@
 			children = (
 				571E08A9083FD4334E4B7D06 /* App.app */,
 				709ECB981BF7FB2A9D697179 /* Auth.framework */,
+				514C6A786251DDEC6B3DFF77 /* Core.framework */,
+				D3971CE0F850EA4A76F58D45 /* Util.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";

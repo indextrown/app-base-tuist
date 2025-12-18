@@ -17,6 +17,14 @@ let project = Project(
                 .project(
                     target: "Auth",
                     path: "../Feature/Auth"
+                ),
+                .project(
+                    target: "Core",
+                    path: "../Feature/Core"
+                ),
+                .project(
+                    target: "Util",
+                    path: "../Feature/Util"
                 )
             ]
         )
