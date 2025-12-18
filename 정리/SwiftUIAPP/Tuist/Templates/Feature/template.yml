@@ -1,0 +1,15 @@
+name: Feature
+description: Create a Feature module
+
+variables:
+  name:
+    description: Feature name
+    default: Feature
+
+files:
+  - path: Projects/{{ name }}/Sources/{{ name }}.swift
+    template: Feature.swift.stencil
+
+  - path: Projects/{{ name }}/Project.swift
+    template: Project.swift.stencil
+

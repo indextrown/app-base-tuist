@@ -1,0 +1,19 @@
+import ProjectDescription
+
+let project = Project(
+    name: "{{ name }}",
+    targets: [
+        .target(
+            name: "{{ name }}",
+            destinations: .iOS,
+            product: .app,
+            bundleId: "com.example.{{ name | lowercase }}",
+            deploymentTargets: .iOS("17.0"),
+            infoPlist: .default,
+            sources: ["Sources/**"],
+            dependencies: [
+                // Feature 의존성은 나중에 추가
+            ]
+        )
+    ]
+)

@@ -1,0 +1,36 @@
+import ProjectDescription
+
+let project = Project(
+    name: "{{ name | capitalize }}",
+    targets: [
+
+        // MARK: - Feature Framework
+        .target(
+            name: "{{ name | capitalize }}",
+            destinations: .iOS,
+            product: .framework,
+            bundleId: "com.example.{{ name | lowercase }}",
+            deploymentTargets: .iOS("17.0"),
+            sources: ["Sources/**"],
+            resources: ["Resources/**"],
+            dependencies: []
+        ),
+
+        // MARK: - Example App
+//        .target(
+//            name: "{{ name | capitalize }}Example",
+//            destinations: .iOS,
+//            product: .app,
+//            bundleId: "com.example.{{ name | lowercase }}.example",
+//            deploymentTargets: .iOS("17.0"),
+//            infoPlist: .extendingDefault(with: [
+//                "UILaunchScreen": [:]
+//            ]),
+//            sources: ["Example/Sources/**"],
+//            resources: ["Example/Resources/**"],
+//            dependencies: [
+//                .target(name: "{{ name | capitalize }}")
+//            ]
+//        )
+    ]
+)

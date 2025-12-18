@@ -1,0 +1,12 @@
+name: App
+description: Create App module
+
+variables:
+  name:
+    description: App name
+    default: App
+
+files:
+  - path: Projects/{{ name }}/Sources/{{ name }}App.swift
+    template: App.swift.stencil
+
