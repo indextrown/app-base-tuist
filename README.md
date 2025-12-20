@@ -1,1 +1,20 @@
-<img width="275" height="251" alt="graph" src="https://github.com/user-attachments/assets/f85e3a7f-1b92-43a8-8dfe-80f4192437f8" />
+<!-- <img width="275" height="251" alt="graph" src="https://github.com/user-attachments/assets/f85e3a7f-1b92-43a8-8dfe-80f4192437f8" />
+ -->
+
+## Tuist란?
+Xcode 프로젝트를 직접 관리하지 않고 코드로 정의해서 자동 생성/최적화해주는 CLI 빌더 툴입니다.  
+기존 xcode에서 했던 targeet, spm, info, build-setting을 tuist로 관리할 수 있습니다.
+- Project.swift 파일을 기반으로 프로젝트(.xcodeproj)파일을 생성해 줍니다.  
+- 이 파일에 프로젝트의 설정값을 정의하면 프로젝트 생성 시 정의한 설정값으로 생성됩니다.
+- 프로젝트의 설정값을 실수로 건드려 일어날 에러를 방지할 수 있습니다.
+
+## 장점
+1. xcodeproj파일이 없다.
+    - 프로젝트를 커맨드 명령어로 그때그때 생성해 주기 때문에 github에 .xcodeproj 프로젝트를 올리지 않아도 됩니다.
+    - 협업 시 프로젝트 파일경로에 관한 git 충돌을 회피할 수 있습니다.
+2. 모듈화가 편리하다.
+    - Project 파일을 생성하고 프로젝트와 타겟을 만들어 주는 메서드를 정의해 두면 모듈 생성 시 호출만 해서 사용하면 모듈 세팅이 금방 끝납니다.
+3. 프로젝트의 의존관계를 파악하기 쉽다.
+    - 의존된 모듈을 찾아가지 않아도 명령어로 이미지로 보기 쉽게 의존 그래프를 그려줍니다.
+4. swift 언어로 모듈과 프로젝트 설정을 정의할 수 있다.
+    - Tuist 모든 설정 파일을 정의할 때는 swift를 사용합니다.
