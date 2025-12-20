@@ -18,3 +18,118 @@ Xcode 프로젝트를 직접 관리하지 않고 코드로 정의해서 자동 �
     - 의존된 모듈을 찾아가지 않아도 명령어로 이미지로 보기 쉽게 의존 그래프를 그려줍니다.
 4. swift 언어로 모듈과 프로젝트 설정을 정의할 수 있다.
     - Tuist 모든 설정 파일을 정의할 때는 swift를 사용합니다.
+
+## Tuist 설치
+```bash
+# Tuist 공식 문서
+# https://docs.tuist.dev/en/
+# https://docs.tuist.dev/en/guides/features/projects/directory-structure
+
+# mise 설치
+curl https://mise.run | sh
+
+# mise 환경 활성화 (zsh 기준)
+eval "$(mise activate zsh)" # 입력  후 저장
+source ~/.zshrc  
+
+# mise를 통해 Tuist 설치  
+mise install tuist        # 최신 버전
+mise use -g tuist@4.115.0 # 버전 명시
+ 
+# Tuist4 버전을 전역으로 활성화
+mise use -g tuist@4
+
+# 설치 확인
+tuist version
+
+# 설치된 버전 확인
+mise list tuist
+```
+
+## 프로젝트 설정
+```bash
+# 현재 디렉토리를 Tuist 프로젝트로 초기화
+# - Project.swift, Tuist/Config.swift 등이 생성됨
+tuist init
+
+# Tuist 프로젝트 루트로 이동
+cd 프로젝트
+
+# Xcode 프로젝트(.xcodeproj) 생성
+# --no-open 옵션:
+#   - 생성 후 Xcode를 자동으로 열지 않음
+#   - 터미널 작업을 이어서 할 때 유용
+tuist generate --no-open
+
+# Tuist 설정 파일 편집 모드 실행
+# - Project.swift, Workspace.swift 등을
+#   Xcode 자동완성/타입체크와 함께 수정
+# - 앱 코드 수정용이 아님 (설정 전용)
+tuist edit
+```
+
+## Project.swift 분석하기
+```swift
+// Project.swift
+/**
+ 생성 결과물
+ -  SwiftUIAPP.xcodeproj
+ - SwiftUIAPP.xcworkspace
+ */
+let project = Project(
+    name: "SwiftUIAPP",
+    
+    /**
+     이 프로젝트에 포함될 타겟 목록
+     → 여기서는 앱 타겟 1개 + 테스트 타겟 1개
+     */
+    targets: [
+        // App
+        .target(
+            name: "SwiftUIAPP",
+            destinations: .iOS,                 // 실행 가능한 플랫폼
+            product: .app,                      // 빌드 결과물 타입 .framework / .staticFramework / .unitTests / uiTests
+            bundleId: "dev.tuist.SwiftUIAPP",   // 앱의 고유 식별자
+            infoPlist: .extendingDefault(       // 기본 Info.plist + 추가 설정
+                with: [
+                    /**
+                     Launch Screen 설정
+                     - SwiftUI에서는 보통 비워둬도 문제 없음
+                     - 실제 화면은 LaunchScreen.storyboard 또는 SwiftUI splash로 처리
+                     - 아예 필요 없으면 이렇게도 가능 infoPlist: .default
+                     */
+                    "UILaunchScreen": [
+                        "UIColorName": "",
+                        "UIImageName": "",
+                    ],
+                ]
+            ),
+            /**
+             이 폴더들을 하나의 타겟 소스로 인식
+             Tuist가 자동으로 Swift 파일 -> Sources
+             Assets / json / images -> Resources
+             */
+            buildableFolders: [
+                "SwiftUIAPP/Sources",
+                "SwiftUIAPP/Resources",
+            ],
+            /**
+             이 타겟이 의존하는 다른 타겟 / 프레임워크
+             */
+            dependencies: []
+        ),
+        // Test
+        .target(
+            name: "SwiftUIAPPTests",
+            destinations: .iOS,
+            product: .unitTests,
+            bundleId: "dev.tuist.SwiftUIAPPTests",
+            infoPlist: .default,
+            buildableFolders: [
+                "SwiftUIAPP/Tests"
+            ],
+            dependencies: [.target(name: "SwiftUIAPP")]
+        ),
+    ]
+)
+```
