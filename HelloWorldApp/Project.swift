@@ -17,8 +17,8 @@ let project = Project(
                 ]
             ),
             buildableFolders: [
-                "HelloWorldApp/Sources",
-                "HelloWorldApp/Resources",
+                "Project/HelloWorldApp/Sources",
+                "Project/HelloWorldApp/Resources",
             ],
             dependencies: []
         ),
@@ -29,7 +29,7 @@ let project = Project(
             bundleId: "dev.tuist.HelloWorldAppTests",
             infoPlist: .default,
             buildableFolders: [
-                "HelloWorldApp/Tests"
+                "Project/HelloWorldApp/Tests"
             ],
             dependencies: [.target(name: "HelloWorldApp")]
         ),
