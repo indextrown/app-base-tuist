@@ -50,6 +50,7 @@ mise list tuist
 ```bash
 # 현재 디렉토리를 Tuist 프로젝트로 초기화
 # - Project.swift, Tuist/Config.swift 등이 생성됨
+# - HelloWorldApp mise.toml     Project.swift Tuist         Tuist.swift
 tuist init
 
 # Tuist 프로젝트 루트로 이동
