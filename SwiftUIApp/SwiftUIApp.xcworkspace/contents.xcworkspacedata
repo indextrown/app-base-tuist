@@ -2,8 +2,8 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "group:Projects"
-      name = "Projects">
+      location = "group:Project"
+      name = "Project">
       <FileRef
          location = "group:App/App.xcodeproj">
       </FileRef>
@@ -12,18 +12,6 @@
          name = "Feature">
          <FileRef
             location = "group:Auth/Auth.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:Core/Core.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:UI/UI.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:Ui/UI.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:Util/Util.xcodeproj">
          </FileRef>
       </Group>
    </Group>

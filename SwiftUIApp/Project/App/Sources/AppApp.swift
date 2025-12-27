@@ -1,7 +1,8 @@
 import SwiftUI
+import Auth
 
 @main
-struct {{ name }}App: App {
+struct AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

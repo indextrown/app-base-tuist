@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "{{ name }}",
+    name: "App",
     targets: [
         .target(
-            name: "{{ name }}",
+            name: "App",
             destinations: .iOS,
             product: .app,
-            bundleId: "com.example.{{ name | lowercase }}",
+            bundleId: "com.example.app",
             deploymentTargets: .iOS("17.0"),
             infoPlist: .extendingDefault(with: [
                 "UILaunchScreen": [:]
@@ -16,6 +16,10 @@ let project = Project(
             resources: ["Resources/**"],
             dependencies: [
                 // Feature 의존성은 나중에 추가
+                .project(
+                    target: "Auth",
+                    path: "../Feature/Auth"
+                )
             ]
         )
     ]

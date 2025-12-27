@@ -17,7 +17,7 @@
                BlueprintIdentifier = "93E9E330FC2CE7458D9C925F"
                BuildableName = "App.app"
                BlueprintName = "App"
-               ReferencedContainer = "container:Projects/App/App.xcodeproj">
+               ReferencedContainer = "container:Project/App/App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,63 +31,7 @@
                BlueprintIdentifier = "CD1FF535BD66CAFC10C0E412"
                BuildableName = "Auth.framework"
                BlueprintName = "Auth"
-               ReferencedContainer = "container:Projects/Feature/Auth/Auth.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B90FCF66245CD7327BEE2CBF"
-               BuildableName = "Core.framework"
-               BlueprintName = "Core"
-               ReferencedContainer = "container:Projects/Feature/Core/Core.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A71F8DD2A4C18857FFBFF581"
-               BuildableName = "UI.framework"
-               BlueprintName = "UI"
-               ReferencedContainer = "container:Projects/Feature/UI/UI.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A71F8DD2A4C18857FFBFF581"
-               BuildableName = "UI.framework"
-               BlueprintName = "UI"
-               ReferencedContainer = "container:Projects/Feature/Ui/UI.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5BAEF0EE03F09D494B7E734"
-               BuildableName = "Util.framework"
-               BlueprintName = "Util"
-               ReferencedContainer = "container:Projects/Feature/Util/Util.xcodeproj">
+               ReferencedContainer = "container:Project/Feature/Auth/Auth.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -117,7 +61,7 @@
             BlueprintIdentifier = "93E9E330FC2CE7458D9C925F"
             BuildableName = "App.app"
             BlueprintName = "App"
-            ReferencedContainer = "container:Projects/App/App.xcodeproj">
+            ReferencedContainer = "container:Project/App/App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -134,7 +78,7 @@
             BlueprintIdentifier = "93E9E330FC2CE7458D9C925F"
             BuildableName = "App.app"
             BlueprintName = "App"
-            ReferencedContainer = "container:Projects/App/App.xcodeproj">
+            ReferencedContainer = "container:Project/App/App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
